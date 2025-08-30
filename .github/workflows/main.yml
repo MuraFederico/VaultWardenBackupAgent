@@ -24,8 +24,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/vaultwardenbackupagent:latest .
+          docker build -t ghcr.io/murafederico/vaultwardenbackupagent:latest .
 
       - name: Push Docker image
         run: |
-          docker push ghcr.io/vaultwardenbackupagent:latest
+          docker push ghcr.io/murafederico/vaultwardenbackupagent:latest
