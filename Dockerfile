@@ -20,7 +20,7 @@ RUN GOOS=linux GOARCH=amd64 go build -o myapp .
 FROM node:22-alpine AS cli_installer
 
 # Install necessary dependencies for the CLI
-RUN apk --no-cache add curl build-base git bash
+RUN apk --no-cache add curl git
 
 # Install the required CLI tool using npm   
 RUN npm install -g @bitwarden/cli --legacy-peer-deps
