@@ -2,9 +2,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '**/Dockerfile'
-      - '.github/workflows/docker-nginx.yml'
 
 jobs:
   build-and-push:
